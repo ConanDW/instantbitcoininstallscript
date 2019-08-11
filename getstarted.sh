@@ -1,4 +1,3 @@
-
 #!/bin/bash
 mkdir btcpayserver
 alias btcpayserver="cd /btcpayserver"
@@ -11,5 +10,4 @@ read btcpayhost
 export BTCPAY_HOST="$btcpayhost"
 echo "When you have the ability to type in the terminal again type exit"
 echo "Then go to $btcpayhost to check if everything is syncing /n
-if there is any issues contact support"
-                                            
+if there are any issues with the install please contact support."

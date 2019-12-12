@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Now, please enter the previously setup domain name. Ex: btcpay.bitcoin1776.org"
 read btcpayhost
-sudo su - <<EOF
+sudo su - <<EOF #Creates a root shell and runs it in that.
 mkdir btcpayserver
 alias btcpayserver="cd /btcpayserver"
 cd btcpayserver
@@ -11,7 +11,7 @@ cd btcpayserver-docker
 export BTCPAY_HOST="$btcpayhost"
 export NBITCOIN_NETWORK="mainnet"
 export BTCPAYGEN_CRYPTO1="btc"
-export BTCPAYGEN_REVERSEPROXY="nginx"
+export BTCPAYGEN_REVERSEPROXY="nginx" #Required exports by btcpay
 export BTCPAYGEN_LIGHTNING="lnd"
 export BTCPAYGEN_ADDITIONAL_FRAGMENTS="opt-save-storage-xs;opt-save-memory"
 echo "When you have the ability to type in the terminal again type exit"

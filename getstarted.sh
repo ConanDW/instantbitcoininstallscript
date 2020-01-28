@@ -18,4 +18,4 @@ echo "When you have the ability to type in the terminal again type exit"
 echo "Then go to $btcpayhost to check if everything is syncing /n if there are any issues with the install please contact support"
 . ./btcpay-setup.sh -i
 EOF
-#Copyright 2019 Instant Bitcoin, made with <3 by Cameron Day
+#Copyright 2020 Instant Bitcoin, made with <3 by Cameron Day
